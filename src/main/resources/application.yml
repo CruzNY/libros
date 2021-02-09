@@ -1,0 +1,18 @@
+server:
+  error:
+    include-message: always
+    include-bidning-errors: always
+
+srping:
+  datasource:
+    password: Spikesin13
+      url: jdbc:postgresql://localhost:5433/registration
+      username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgresSQLDialect
+        format-sql: true
+    show-sql: true
