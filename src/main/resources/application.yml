@@ -3,9 +3,9 @@ server:
     include-message: always
     include-bidning-errors: always
 
-srping:
+spring:
   datasource:
-    password: Spikesin13
+      password: Spikesin13
       url: jdbc:postgresql://localhost:5433/registration
       username: postgres
   jpa:
@@ -13,6 +13,5 @@ srping:
       ddl-auto: create-drop
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.PostgresSQLDialect
-        format-sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
     show-sql: true
